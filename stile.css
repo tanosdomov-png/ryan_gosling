@@ -1,31 +1,56 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #111;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
     color: white;
 }
 
-header {
+.banner {
+    background: linear-gradient(45deg, #ff0000, #660000);
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px;
+    border-bottom: 3px solid #ff3333;
 }
 
-.gallery {
+.banner h1 {
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.content {
+    padding: 30px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.photos {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 30px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-.gallery img {
-    width: 400px;
-    border-radius: 10px;
+.photos img {
+    width: 420px;
+    border-radius: 12px;
     border: 2px solid #ff0000;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    opacity: 0.6;
+    box-shadow: 0 0 15px #ff000066;
 }
